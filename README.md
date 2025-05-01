@@ -12,5 +12,6 @@ This repository was created to practice and continue learning frontend technolog
 Personal learning and portfolio showcase.
 Feel free to explore!
 
+Visit the practice projects
+Reto 1:  https://ns-1908.github.io/Practice-proyects/100DaysOfCssChallenge/reto01/
 
-https://ns-1908.github.io/Practice-proyects/
