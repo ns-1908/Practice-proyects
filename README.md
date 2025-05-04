@@ -1,5 +1,3 @@
-🧪 Practice Project
-
 This repository was created to practice and continue learning frontend technologies I enjoy working with.
 
 🛠️ Technologies Used
