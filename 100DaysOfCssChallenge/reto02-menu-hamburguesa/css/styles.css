@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3faf82;
+}
+.menu {
+  aspect-ratio: 1/1;
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  gap: 12%;
+  justify-content: center;
+  cursor: pointer;
+}
+span {
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
+  filter: drop-shadow(1px 1px 10px #0000004f);
+}
+
+/*Reverse*/
+.line3 {
+  animation: bottomReverse 700ms ease-in-out backwards;
+}
+@keyframes bottomReverse {
+  0% {
+    transform: translateY(-225%) rotate(135deg);
+  }
+  50% {
+    transform: translateY(-225%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.line2 {
+  animation: centerReverse 700ms ease-in-out forwards;
+}
+@keyframes centerReverse {
+  0%,
+  50% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.line1 {
+  animation: topReverse 700ms ease-in-out forwards;
+}
+@keyframes topReverse {
+  0% {
+    transform: translateY(225%) rotate(45%);
+  }
+  50% {
+    transform: translateY(225%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+/*finish reverse animation*/
+
+/*start animation*/
+.top {
+  animation: topStart 700ms ease-in-out forwards;
+}
+@keyframes topStart {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: translateY(225%);
+  }
+  100% {
+    transform: translateY(225%) rotate(45deg);
+  }
+}
+.center {
+  animation: centerStart 700ms ease-in-out forwards;
+}
+@keyframes centerStart {
+  0% {
+    scale: 1;
+  }
+  50%,
+  100% {
+    scale: 0;
+  }
+}
+.bottom {
+  animation: bottomStart 700ms ease-in-out forwards;
+}
+@keyframes bottomStart {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: translateY(-225%);
+  }
+  100% {
+    transform: translateY(-225%) rotate(135deg);
+  }
+}
+/*finish the start animation*/
