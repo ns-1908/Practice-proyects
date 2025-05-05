@@ -19,4 +19,5 @@ Cheers!
 https://100dayscss.com/
 
 Reto 1:  https://ns-1908.github.io/Practice-proyects/100DaysOfCssChallenge/reto01/
+Reto 2:  https://ns-1908.github.io/Practice-proyects/100DaysOfCssChallenge/reto02/
 
