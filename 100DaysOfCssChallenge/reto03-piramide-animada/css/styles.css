@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  background-color: #272c24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  aspect-ratio: 1/1;
+  width: 40vw;
+  background-color: #75cfeb;
+  border-radius: 50%;
+
+  position: relative;
+  overflow: hidden;/*ocula los elementos que salgan del contenedor*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: disappear 3.5s linear infinite;/* animacion del container */
+}
+
+@keyframes disappear {
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.ground{
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background-color: #dece6f;
+  top: 65%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shadow{
+  height: 100%;
+  width: 150%;
+  background-color: rgba(0, 0, 0, 0.25);
+
+  /* https://bennettfeely.com/clippy/ */
+  clip-path: polygon(15% 0%, 100% 20%, 85% 0%);
+  animation: shadow 3.5s linear infinite;
+}
+@keyframes shadow{
+  0%{
+    clip-path: polygon(15% 0%, 100% 20%, 85% 0%);
+  }
+  30%{
+    clip-path: polygon(15% 0%, 100% 40%, 85% 0%);
+  }
+  50%{
+    clip-path: polygon(15% 0%, 100% 40%, 85% 0%);
+  }
+  100%{
+    clip-path: polygon(15% 0%, 0% 50%, 85% 0%);
+  }
+}
+
+.pyramid{
+  position: absolute;
+  height: 30%;
+  width: 70%;
+  bottom: 34.7%;
+
+  display: flex;
+}
+.sideA{
+  height: 100%;
+  width: 70%;
+  background-color: #f0f0f0;
+  clip-path: polygon(5% 100%,90% 100%, 70% 10%);
+  position: absolute;
+  z-index: 1;
+  animation: changeA 3.5s linear infinite;
+}
+@keyframes changeA{
+  0%{
+    background-color: #c3c1c3;
+  }
+  30%{
+    background-color: #dadada;
+  }
+  60%{
+    background-color: #dadada;
+  }
+  90%{
+    background-color: #919191;
+  }
+}
+.sideB{
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  background-color: #c3c1c3;
+  clip-path: polygon(44% 100%,27% 10%, 100% 100%);
+  left: 30%;
+  animation: changeB 3.5s linear infinite;
+}
+@keyframes changeB{
+  0%{
+    background-color: #919191;
+  }
+  30%{
+    background-color: #c3c1c3;
+  }
+  50%{
+    background-color: #c3c1c3;
+  }
+  100%{
+    background-color: #e0e0e0;
+  }
+}
+.background-sun{
+  position: absolute;
+  height: 170%;
+  width: 170%;
+  top: 40%;
+  transform: rotate(0deg);
+  animation: spin 3.5s linear infinite;
+}
+@keyframes spin{
+  0%{
+    transform: rotateZ(0deg);
+  }
+  30%{
+    transform: rotateZ(30deg);
+  }
+  50%{
+    transform: rotateZ(30deg);
+  }
+  100%{
+    transform: rotateZ(90deg);
+  }
+}
+.sun{
+  position: absolute; /*no le damos posicion especifica, por defecto queda en la esquina superior izq del background-sun */
+  height: 13%;
+  width: 13%;
+  border-radius: 50%;
+  background-color: #fee401;
+}
