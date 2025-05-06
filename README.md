@@ -19,4 +19,4 @@ https://100dayscss.com/
 
 Reto 1: https://ns-1908.github.io/Practice-proyects/100DaysOfCssChallenge/reto01/<br>
 Reto 2:  https://ns-1908.github.io/Practice-proyects/100DaysOfCssChallenge/reto02-menu-hamburguesa/<br>
-Reto 3:  https://ns-1908.github.io/Practice-proyects/100DaysOfCssChallenge/reto02-menu-hamburguesa/<br>
+Reto 3:  https://ns-1908.github.io/Practice-proyects/100DaysOfCssChallenge/reto03-piramide-animada/<br>
