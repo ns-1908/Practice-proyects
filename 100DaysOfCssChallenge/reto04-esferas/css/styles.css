@@ -1,0 +1,117 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  background-color: #e56262;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  aspect-ratio: 1/1;
+  width: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sphere-1{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 28px 28px 31px 10px rgba(0, 0, 0, 0.20);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scale-1 4s linear infinite;
+}
+@keyframes scale-1{
+  0%{
+    scale: 0;
+  }
+  20%{
+    scale: 1;
+  }
+  40%{
+    scale: 1;
+  }
+  60%{
+    scale: 1;
+  }
+  70%{
+    scale: 1;
+  }
+  90%{
+    scale: 0;
+  }
+  100%{
+    scale: 0;
+  }
+}
+.sphere-2{
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 28px 28px 31px 10px rgba(0, 0, 0, 0.20);
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scale-2 4s linear infinite;
+}
+@keyframes scale-2{
+  0%{
+    scale: 0;
+  }
+  15%{
+    scale: 0;
+  }
+  30%{
+    scale: 1;
+  }
+  60%{
+    scale: 1;
+  }
+  85%{
+    scale: 0;
+  }
+  100%{
+    scale: 0;
+  }
+}
+.sphere-3{
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 28px 28px 31px 10px rgba(0, 0, 0, 0.20);
+
+  animation: scale-3 4s linear infinite;
+}
+@keyframes scale-3{
+  0%{
+    scale: 0;
+  }
+  30%{
+    scale: 0;
+  }
+  40%{
+    scale: 1;
+  }
+  55%{
+    scale: 1;
+  }
+  70%{
+    scale: 0;
+  }
+  100%{
+    scale: 0;
+  }
+}
