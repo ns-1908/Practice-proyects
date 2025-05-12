@@ -10,6 +10,12 @@ This repository was created to practice and continue learning frontend technolog
 Personal learning and portfolio showcase.
 Feel free to explore!
 
+-----------------
+Here is one of the projects I had to do for the Web Interface Design course, in which we were given a base frame and had to propose a theme based on it. The goal was to put our acquired CSS knowledge to the test.
+
+
+----------------
+
 I’m currently working on the following practice exercises. 
 Below, I’ll be keeping track of my progress. Thanks for stopping by.
 Cheers!
