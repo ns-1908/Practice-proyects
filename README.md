@@ -11,7 +11,7 @@ Personal learning and portfolio showcase.
 Feel free to explore!
 
 -----------------
-Here is one of the projects I had to do for the Web Interface Design course, in which we were given a base frame and had to propose a theme based on it. The goal was to put our acquired CSS knowledge to the test. <br>
+Here is one of the projects I had to do for a university course called Web Interface Design. We were given a base frame and had to propose a theme based on it. The goal was to put our acquired CSS knowledge to the test. <br>
 https://ns-1908.github.io/Practice-proyects/Uni-Proyects/Entrega-DIW
 
 ----------------
