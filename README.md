@@ -30,4 +30,4 @@ Challenge 2 of CSS: https://ns-1908.github.io/Practice-proyects/100DaysOfCssChal
 Challenge 3 of CSS: https://ns-1908.github.io/Practice-proyects/100DaysOfCssChallenge/reto03-piramide-animada/<br>
 Challenge 4 of CSS: https://ns-1908.github.io/Practice-proyects/100DaysOfCssChallenge/reto04-esferas/<br>
 
-Challenge 1 of JS: 
+Challenge 1 of JS: https://ns-1908.github.io/Practice-proyects/ASMR-Javascript/01-tablero/ <br>
