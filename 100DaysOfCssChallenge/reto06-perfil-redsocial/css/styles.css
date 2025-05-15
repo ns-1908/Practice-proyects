@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #958676;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFCC6B;
+  background: linear-gradient(45deg,rgba(255, 204, 107, 1) 0%, rgba(223, 177, 4, 1) 100%);
+}
+.container{
+  aspect-ratio: 1/1;
+  width: 500px;
+  background-color: white;
+
+  display: grid; /*dividimos las dos areas dentro del container*/
+  grid-template-columns: 0.65fr 0.35fr; /*el lado izq tiene el 65% del espacio y el derecho 35%*/
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.4);
+}
+.left{
+  height: 80%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.photo{
+  height: 130px;
+  width: 130px;
+  background-image: url(../img/jessica-potter.jpg);
+  background-size: contain; /*la imagen de fondo se ajusta completamente dentro del contenedor sin recortarse, manteniendo su proporción original*/
+  border-radius: 50%;
+
+  position: relative;
+  cursor: pointer;
+}
+.photo:before{
+  content: "";
+  position: absolute;
+  width: 140px; /*mas del tamano original de la foto, para el efecto*/
+  height: 140px;
+  top: -6px;
+  left: -6px;
+  border: 1px solid ; /*al final iria el color, pero lo dividimos para darle efecto*/
+  border-color: #786450 #786450 #786450 transparent; /*arriba, derecha y abajo tienen color y la izquierda es transparente*/
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+}
+.photo:hover:before{
+  transform: rotateZ(360deg); /*cuando pasamos por encima del pseudoelemento creado con before, gira alrededor de la foto*/
+}
+
+.photo::after{
+  content: "";
+  position: absolute;
+  width: 150px; /*tiene 10 px mas que en el before*/
+  height: 150px;
+  top: -11.5px; /*varia con respecto al before la posicion*/
+  left: -11.5px;
+  border: 1px solid ; 
+  border-color: #786450 transparent #786450 #786450; 
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+}
+.photo:hover:after{
+  transform: rotateZ(-360deg); /*varia con respecto al before*/
+}
+.name
+{
+  text-align: center; /*alinea los elementos contenidos al centro*/
+  margin-bottom: 10%;
+  font-size: 1.3rem;
+}
+.links{
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 55%;
+  gap: 10%;
+  font-weight: bold;
+}
+.link{
+  height: 40%;
+  border-radius:30px;
+  border: 2px solid #958676;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link:hover{
+  color: white;
+  background-color: #786450;
+  transition: 500ms ease-in-out;
+}
+
+
+.right{
+  display: flex;
+  flex-direction: column;
+}
+.info{
+  background-color: #f5e8df;
+  height: 33.3%;
+  width: 100%;
+  border: 1px solid white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+  }
+  .info span{
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .info:hover{
+    background-color: #d6c6bb;
+  }
